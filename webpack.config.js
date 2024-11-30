@@ -33,10 +33,25 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyPlugin({
       patterns: [
-        { from: './src/manifest.json', to: './manifest.json' },
+        { 
+          from: './src/manifest.json',
+          to: './manifest.json',
+          transform(content) {
+            return Buffer.from(JSON.stringify({
+              ...JSON.parse(content.toString()),
+              background: {
+                service_worker: 'background/background.js',
+                type: 'module'
+              }
+            }, null, 2))
+          }
+        },
         { from: './src/popup/popup.html', to: './popup/popup.html' },
         { from: './src/styles', to: './styles' },
       ],
     }),
   ],
+  optimization: {
+    minimize: false // This helps with debugging
+  }
 };
