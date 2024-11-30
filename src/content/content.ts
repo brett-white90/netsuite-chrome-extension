@@ -1,1 +1,4 @@
-console.log('Content script loaded');
+// Content script initialization
+(() => {
+  // Initialize content script
+})();

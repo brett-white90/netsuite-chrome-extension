@@ -1,1 +1,4 @@
-console.log('Popup script loaded');
+// Popup initialization
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize popup
+});
