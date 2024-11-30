@@ -10,7 +10,11 @@
       "resolveJsonModule": true,
       "outDir": "./dist",
       "rootDir": "./src",
-      "typeRoots": ["./node_modules/@types", "./src/types"]
+      "typeRoots": [
+        "./node_modules/@types",
+        "./src/types"
+      ],
+      "types": ["chrome"]
     },
     "include": ["src/**/*"],
     "exclude": ["node_modules"]
