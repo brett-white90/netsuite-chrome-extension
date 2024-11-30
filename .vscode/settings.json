@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["netsuite", "smallgraytextnolink"],
+  "cSpell.words": ["fieldhelp", "maxlength", "netsuite", "smallgraytextnolink", "uifi"],
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
